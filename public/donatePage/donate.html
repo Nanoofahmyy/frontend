@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        /* margin: 0; */
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form" id="donation-form">
+        <h2>Donation</h2>
+        <form>
+          <input
+            type="number"
+            id="donation-amount"
+            placeholder="Enter the donation amount (EGP)"
+            required
+          />
+          <button type="button" onclick="validateAndDonate()">Donate</button>
+          <div style="color: red" id="signup-message" class="message"></div>
+        </form>
+      </div>
+    </div>
+    <script src="./donate.js"></script>
+  </body>
+</html>
